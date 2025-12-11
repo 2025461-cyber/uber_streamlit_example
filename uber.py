@@ -26,5 +26,5 @@ if st.checkbox("Show Raw Data"):
 
 
 st.subheader("Number of Pickups Per Hour")
-hist_values = np.histogram(data[DATE_COLUMN].dy.hour, bins = 24, range = (0,24))[0]
+hist_values = np.histogram(data[DATE_COLUMN].dt.hour, bins = 24, range = (0,24))[0]
 st.bar_chart(hist_values)
